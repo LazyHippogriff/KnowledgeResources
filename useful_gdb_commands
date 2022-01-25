@@ -1,0 +1,13 @@
+Some useful gdb commands:
+
+To attach: gdb -p pid(this command will stop the process execution. To resume, use 'continue').
+2. To get info of threads: info threads
+3. To go to particular thread's frame: t tid
+4. To get backtrace: bt or bt f
+5. To set breakpoint: b funcName
+6. To set catchpoint: catch syscall funcName
+7. To view the list of breakpoints/catchpoints: info breakpoints or i b
+8. To delete a breakpoint: d breakpointId
+9. To set a condition on breakpoint/catchpoint: condition breakpointId condition
+10. To set the condition that breakpoint/catchpoint should be triggered in a particular thread ID only:
+condition breakpointId $_thread==tid
